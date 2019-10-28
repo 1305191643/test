@@ -1,0 +1,16 @@
+
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+   <servlet>
+     <servlet-name>downLoadServlet</servlet-name>
+     <display-name>downLoadServlet</display-name>
+     <servlet-class>com.cyf.MyServelt</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+     <servlet-name>downLoadServlet</servlet-name>
+     <url-pattern>/myServelt</url-pattern>
+    </servlet-mapping>
+</web-app>

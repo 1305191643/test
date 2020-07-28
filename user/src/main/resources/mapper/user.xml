@@ -13,6 +13,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	   insert into user (name)
 	   values (#{name})
     </insert>
+    
+    <select id="selectAll"  resultType="com.chen.entry.User"  parameterType="java.util.Map">
+		select u.id,u.name from user as u 
+		
+	</select>
 	
 		
 </mapper>

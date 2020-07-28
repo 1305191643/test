@@ -8,10 +8,10 @@
 		<version>2.0.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.chen</groupId>
-	<artifactId>user</artifactId>
-	<version>1.0</version>
-	<name>user</name>
+	<groupId>com.example</groupId>
+	<artifactId>demo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -19,10 +19,28 @@
 	</properties>
 
 	<dependencies>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		
+		<!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+ 
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency> -->
 		
 		<dependency>
             <groupId>mysql</groupId>
@@ -42,41 +60,27 @@
 		    <version>1.2.5</version>
 		</dependency>
 		
-		 <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>2.0.0.RELEASE</version>
+		<dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         
-      <dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-starter-amqp</artifactId>
-		    <version>2.2.0.RELEASE</version>
-		</dependency>
-      	
+       
 		<dependency>
-   <groupId>com.rabbitmq</groupId>
-   <artifactId>amqp-client</artifactId>
-   <version>3.4.1</version>
-</dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.25.Final</version>
+		</dependency>
 
-		<!-- <dependency>
+
+		
+		
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency> -->
-		
-		<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-test</artifactId>
-    <scope>test</scope>
-</dependency>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -84,9 +88,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<fork>true</fork>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
